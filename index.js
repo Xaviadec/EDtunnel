@@ -46,6 +46,8 @@ if (!isValidUUID(userID)) {
 let parsedSocks5Address = {};
 let enableSocks = false;
 
+let dohURL = 'https://cloudflare-dns.com/dns-query';
+
 /**
  * Main handler for the Cloudflare Worker. Processes incoming requests and routes them appropriately.
  * @param {import("@cloudflare/workers-types").Request} request - The incoming request object
